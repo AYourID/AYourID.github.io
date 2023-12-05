@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>在hexo中插入地图</title>
+      <link href="/2023/12/05/13-03-22/"/>
+      <url>/2023/12/05/13-03-22/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% + 标签值 + 经度 + 纬度 + 文本 + 缩放等级 + 宽 + 高 + 默认图层 + %&#125;</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.css"><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.js"></script><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet.ChineseTmsProviders@1.0.4.js"></script><div id="googleMap-120.101101-30.239119" style="max-width:100%; height:360px;display: block;margin:0 auto;z-index:1;border-radius: 5px;"></div><script type="text/javascript">var normalMap=L.tileLayer.chinaProvider('Google.Normal.Map',{maxZoom:22,minZoom:1,attribution:'Google Maps'}),satelliteMap=L.tileLayer.chinaProvider('Google.Satellite.Map',{maxZoom:22,minZoom:1,attribution:'Google Maps'}),routeMap=L.tileLayer.chinaProvider('Google.Satellite.Annotion',{maxZoom:22,minZoom:1,attribution:'Google Maps'});var baseLayers={"谷歌地图":normalMap,"谷歌卫星图":satelliteMap,"谷歌卫星标注": routeMap};var overlayLayers={};var mymap=L.map("googleMap-120.101101-30.239119",{center:[30.239119,120.101101],zoom:14,layers:[normalMap],zoomControl:false});L.control.layers(baseLayers,null).addTo(mymap);L.control.zoom({zoomInTitle:'放大',zoomOutTitle:'缩小'}).addTo(mymap);var marker = L.marker(['30.239119','120.101101']).addTo(mymap);marker.bindPopup("俺寻思这里是西湖灵隐寺").openPopup();</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>改变npm下载源来提升npm下载速度</title>
+      <link href="/2023/12/05/12-58-19/"/>
+      <url>/2023/12/05/12-58-19/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>更改npm下载源，可以让一些插件安装速度大大提升。</p><p>npm 官方原始镜像网址是：<a href="https://registry.npmjs.org/">https://registry.npmjs.org/</a><br>淘宝 NPM 镜像：<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><br>阿里云 NPM 镜像：<a href="https://npm.aliyun.com/">https://npm.aliyun.com</a><br>腾讯云 NPM 镜像：<a href="https://mirrors.cloud.tencent.com/npm/">https://mirrors.cloud.tencent.com/npm/</a><br>华为云 NPM 镜像：<a href="https://mirrors.huaweicloud.com/repository/npm/">https://mirrors.huaweicloud.com/repository/npm/</a><br>网易 NPM 镜像：<a href="https://mirrors.163.com/npm/">https://mirrors.163.com/npm/</a><br>中科院大学开源镜像站：<a href="http://mirrors.ustc.edu.cn/">http://mirrors.ustc.edu.cn/</a><br>清华大学开源镜像站：<a href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></p><p>更换下载源（以淘宝为例）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科技星球 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> npm </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo主题如何注入自定义CSS与JS文件</title>
       <link href="/2023/11/28/18-35-17/"/>
       <url>/2023/11/28/18-35-17/</url>
@@ -197,7 +237,7 @@
       
         <tags>
             
-            <tag> 搞笑 </tag>
+            <tag> 杂谈 </tag>
             
         </tags>
       
@@ -299,7 +339,7 @@
       
         <tags>
             
-            <tag> 搞笑 </tag>
+            <tag> 杂谈 </tag>
             
         </tags>
       
