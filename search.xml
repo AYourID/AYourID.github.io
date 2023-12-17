@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title>在hexo中插入地图</title>
+      <title>亚控常见问题知识库</title>
+      <link href="/2023/12/17/19-53-59/"/>
+      <url>/2023/12/17/19-53-59/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>亚控公司的常见问题知识库，包括KingSCADA<br><a href="https://www.kingsupport.cn/">https://www.kingsupport.cn/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科技星球 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> KingSCADA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在Hexo中插入地图</title>
       <link href="/2023/12/05/13-03-22/"/>
       <url>/2023/12/05/13-03-22/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% + 标签值 + 经度 + 纬度 + 文本 + 缩放等级 + 宽 + 高 + 默认图层 + %&#125;</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.css"><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.js"></script><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet.ChineseTmsProviders@1.0.4.js"></script><div id="geoqMap-120.101101-30.239119" style="max-width:90%; height:320px;display: block;margin:0 auto;z-index:1;border-radius: 5px;"></div><script type="text/javascript">var normalm1=L.tileLayer.chinaProvider('Geoq.Normal.Map',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm2=L.tileLayer.chinaProvider('Geoq.Normal.PurplishBlue',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm3=L.tileLayer.chinaProvider('Geoq.Normal.Gray',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm4=L.tileLayer.chinaProvider('Geoq.Normal.Warm',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm5=L.tileLayer.chinaProvider('Geoq.Theme.Hydro',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normal=L.layerGroup([normalm1,normalm2,normalm3,normalm4,normalm5]);var baseLayers={"智图地图":normalm1,"午夜蓝":normalm2,"灰色":normalm3,"暖色":normalm4,"水系":normalm5};var mymap=L.map("geoqMap-120.101101-30.239119",{center:[30.239119,120.101101],zoom:13,layers:[normalm3],zoomControl:false});L.control.layers(baseLayers,null).addTo(mymap);L.control.zoom({zoomInTitle:'放大',zoomOutTitle:'缩小'}).addTo(mymap);var marker = L.marker(['30.239119','120.101101']).addTo(mymap);marker.bindPopup("这里是西湖灵隐寺，据说求姻缘很灵验哦！").openPopup();</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>在你的文章中插入地图</p><p>需要先安装插件：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-tag-map</span><br></pre></td></tr></table></figure><p>安装完毕后，你可以在你的文章使用以下语法来插入地图</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% + 标签值 + 经度 + 纬度 + 文本 + 缩放等级 + 宽 + 高 + 默认图层 + %&#125;</span><br></pre></td></tr></table></figure><p>例如：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% geoqMap 120.101101,30.239119, 俺寻思这里是西湖灵隐寺, 13, 90%, 320px, 3 %&#125;</span><br></pre></td></tr></table></figure><p>效果如下</p><link rel="stylesheet" href="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.css"><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.js"></script><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet.ChineseTmsProviders@1.0.4.js"></script><div id="geoqMap-120.101101-30.239119" style="max-width:90%; height:320px;display: block;margin:0 auto;z-index:1;border-radius: 5px;"></div><script type="text/javascript">var normalm1=L.tileLayer.chinaProvider('Geoq.Normal.Map',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm2=L.tileLayer.chinaProvider('Geoq.Normal.PurplishBlue',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm3=L.tileLayer.chinaProvider('Geoq.Normal.Gray',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm4=L.tileLayer.chinaProvider('Geoq.Normal.Warm',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normalm5=L.tileLayer.chinaProvider('Geoq.Theme.Hydro',{maxZoom:20,minZoom:1,attribution:'GeoQ'});var normal=L.layerGroup([normalm1,normalm2,normalm3,normalm4,normalm5]);var baseLayers={"智图地图":normalm1,"午夜蓝":normalm2,"灰色":normalm3,"暖色":normalm4,"水系":normalm5};var mymap=L.map("geoqMap-120.101101-30.239119",{center:[30.239119,120.101101],zoom:13,layers:[normalm3],zoomControl:false});L.control.layers(baseLayers,null).addTo(mymap);L.control.zoom({zoomInTitle:'放大',zoomOutTitle:'缩小'}).addTo(mymap);var marker = L.marker(['30.239119','120.101101']).addTo(mymap);marker.bindPopup("俺寻思这里是西湖灵隐寺").openPopup();</script><p>标签值可以用：<code>map</code>、<code>googleMap</code>、<code>gaodeMap</code>、<code>baiduMap</code>、<code>geoqMap</code>、<code>openstreetMap</code></p>]]></content>
       
       
+      <categories>
+          
+          <category> 科技星球 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     
