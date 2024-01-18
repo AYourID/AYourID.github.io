@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Maya3D学习笔记</title>
+      <link href="/2024/01/18/15-50-09/"/>
+      <url>/2024/01/18/15-50-09/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h3 id="快捷操作"><a href="#快捷操作" class="headerlink" title="快捷操作"></a>快捷操作</h3><h4 id="热核"><a href="#热核" class="headerlink" title="热核"></a>热核</h4><p>热核是一种快捷菜单<br>1.按住鼠标右键<br>2.按住空格键<br>3.按住shift键同时按住右键<br>4.按住ctrl键同时按住右键</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科技星球 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maya3D </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何关掉笔记本的触控屏</title>
+      <link href="/2024/01/17/18-35-06/"/>
+      <url>/2024/01/17/18-35-06/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>此操作仅适用于支持触摸屏功能的计算机。</p><p>若您的计算机支持触摸屏功能，触摸屏的触屏功能默认是开启的。您可以通过以下操作，禁用、启用触摸屏的触摸功能：</p><p>右键点击 Windows 图标 ，选择设备管理器。</p><p>点击人体学输入设备（或人机接口设备）的下拉按钮，右键点击符合 HID 标准的触摸屏（部分产品显示为 HID-compliant Touch Screen），选择禁用设备。</p><p>点击是。设置后，触摸屏的触摸功能将无法使用。</p><p>右键点击符合 HID 标准的触摸屏（或 HID-compliant Touch Screen），选择启用设备。设置后，触摸屏的触摸功能将再次打开。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安抚机魂祝圣事项 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>亚控常见问题知识库</title>
       <link href="/2023/12/17/19-53-59/"/>
       <url>/2023/12/17/19-53-59/</url>
