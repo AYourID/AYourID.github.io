@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Cakewalk操作笔记</title>
+      <link href="/2024/09/18/08-33-49/"/>
+      <url>/2024/09/18/08-33-49/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p><img src="/pic/%E5%9B%BE%E6%A0%87-%E4%B8%87%E6%9C%BA%E4%B9%8B%E7%A5%9E.jpg" alt="保佑我别出BUG,QAQ" title="保佑我别出BUG,QAQ"></p><p><em>免费好用的混音软件！</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 共振谐律 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cakewalk </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2024/09/01/16-15-38/"/>
       <url>/2024/09/01/16-15-38/</url>
@@ -24,6 +49,18 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p><img src="/pic/%E5%9B%BE%E6%A0%87-%E4%B8%87%E6%9C%BA%E4%B9%8B%E7%A5%9E.jpg" alt="保佑我别出BUG,QAQ" title="保佑我别出BUG,QAQ"></p><p><em>Steam上免费下载……我本来不想用它的，但是它的渲染真的牛。</em></p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这玩意跟Maya很相似，但是大小才一个G左右。而且渲染的效果看起来真的很不错。<br>而且这玩意在<code>Steam</code>上免费下载！</p><p><img src="/pic/BD0.1.png" alt="Blender" title="Blender"></p><p><img src="/pic/BD0.2.png" alt="Blender" title="Blender"></p><h1 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h1><p><img src="/pic/BD1.1.png" alt="Blender" title="Blender"></p><p>最主要的还是左边的操作面板。<br>这些操作面板写的很清楚，我不进行过多解释了。</p><h2 id="快捷操作"><a href="#快捷操作" class="headerlink" title="快捷操作"></a>快捷操作</h2><p>1.选中一个物体，按下<code>G键</code>就可以<code>自由移动</code>并且按下<code>X、Y、Z键</code>可以让物体沿这几个坐标轴移动。<br>2.<code>S键</code>可以让物体进行<code>缩放模式</code>同上。<br>警告：你在<code>物体模式</code>下缩放完毕之后一定要按下<code>Ctrl+A键</code>，选择应用缩放。否则你模型导出到别的地方会出问题。<br>3.<code>R键</code>可以让物体旋转，其他同上。<br>4.<code>H键</code>可以让选择的物体<code>隐藏</code>，<code>Alt+H键</code>让所有隐藏的物体显示。<br>5.按下键盘上的<code>~键</code>切换视图。<br>6.<code>开小窗</code>：把鼠标停留在3D视图的右下角或者左下方，等它出现一个十字标志，<code>右键</code><br>7.<code>Shift+A键</code>可以<code>快速创建</code>一个物体</p><h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><p>照猫画虎式建模。</p><p><img src="/pic/BD1.2.png" alt="Blender" title="Blender"></p><p>插入一个图片，然后把图片的透明度拉低一点，照着图片建模。</p><h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>Blender自带渲染的软件有两个：<code>EEVEE</code>和<code>CYCLES</code><br><code>EEVEE</code>渲染速度快，质量低。<br><code>CYCLES</code>渲染速度慢，质量高。</p><p>按下<code>F12键</code>就会可以生成渲染。</p><p><img src="/pic/BD1.3.png" alt="Blender" title="Blender"></p><p>图中左方是渲染视图，而且需要注意的是：在最右方选择<code>世界环境</code>中Blander默认已经给我们设置了一点世界光，如果需要建造环境比较黑的场景，别忘了关掉世界光。</p><p>我这里建议你使用<code>CYCLES</code>进行渲染（因为它效果真不错），你如果觉得渲染的太慢或者你的场景很小的话，你可以尝试调小右边<code>视图</code>和<code>渲染</code>的<code>最大采样。 在使用</code>CYCLES<code>渲染时，我建议你选择</code>GPU计算&#96;。</p><p><img src="/pic/BD1.5.png" alt="Blender" title="Blender"></p><h3 id="柔和度"><a href="#柔和度" class="headerlink" title="柔和度"></a>柔和度</h3><p>1.选中你建模的物体，右键<code>平滑着色</code>让光照上去更柔和。<br>2.有时候你的光照的照的太集中，通过拉大光照的尺寸，你就可以让光看起来更柔和。</p><p><img src="/pic/BD1.4.png" alt="Blender" title="Blender"></p><p>3.有的物体光照上去颜色可能有点奇怪，尝试选中物体在<code>数据</code>中把<code>法向</code>中的<code>自动光滑</code>勾选上。</p><h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><h2 id="进阶-建模"><a href="#进阶-建模" class="headerlink" title="进阶-建模"></a>进阶-建模</h2><p>熟练掌握快捷键是练好建模的重要内容。</p><p><code>Shift+A键</code>可以<code>快速创建</code>一个物体</p><h3 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h3><p>选中物体按下<code>Tab键</code>进入编辑模式。建议在<code>编辑</code>-<code>偏好设置</code>中打开<code>键位映射</code>勾选上<code>Tab键调用饼菜单</code>这样你就可以按住<code>Tab键</code>调出各种编辑模式啦。</p><p>现在我们进入<code>编辑模式</code>，现在处于<code>点模式</code>（对模型上的点进行操作）在左上角，我们可以进入线模式与面模式。<br>可以用键盘上的<code>1、2、3数字</code>键来回切换。按住<code>Shift键</code>的同时选中其他模式，则可以同时开启它们。</p><p><img src="/pic/BD2.1.png" alt="Blender" title="Blender"></p><p>环状选择：<code>Alt+鼠标左键</code>可以帮助你选中同一条线上所有的点、线、面。这个非常有用！<br>首先你选则一个点，之后鼠标向一个方向稍微偏移一点，然后同时按下<code>Alt+鼠标左键</code>,就可以选中一排点了。<br>有时候你可能也会用到<code>Ctrl+Alt+鼠标左键</code>。这样会选中同一平面上的所有平行的东西。也许做柱子的时候会用得上。<br>有时候你按下<code>Alt+鼠标左键</code>可能也选不了一圈的东西，所以在上面的选择中点击<code>选择锐边</code>。</p><p><img src="/pic/BD2.2.png" alt="Blender" title="Blender"></p><p>随机选择：在上面的菜单中点<code>选择</code>你就能看到<code>随机选择</code>这个选项。这也是很常用的功能。</p><p><img src="/pic/BD2.3.png" alt="Blender" title="Blender"></p><p>选中一个点、线、面使用<code>G、S、R键</code>就可以进行<code>移动</code>、<code>缩放</code>、<code>旋转</code>。<br>选中一个元素，按下<code>X键</code>就可以将其删除。</p><p>法线：你可能需要知道哪一个面是正面还是反面，在右上角的<code>叠加</code>中，打开面朝向然后看到<code>蓝色</code>的是<code>正面</code>，而<code>红色</code>的是<code>反面</code>。<br>正面与反面对你的贴图和材质有很大影响！注意正负面。<br>或者在一边的按钮里面选择显示法线，也可以看到正面还是反面。</p><p><img src="/pic/BD2.4.png" alt="Blender" title="Blender"></p><h3 id="细节操作"><a href="#细节操作" class="headerlink" title="细节操作"></a>细节操作</h3><p>现在是雕刻的艺术。在<code>编辑模式</code>下看到左边那一大长串的功能按钮了吗？</p><p><img src="/pic/BD2.5.png" alt="Blender" title="Blender"></p><p>在<code>调整</code>模式下，按下键盘<code>W键</code>就可以调选择模式。这点很重要，因为你需要经常使用框选和点选</p><p>这里面其他重要的功能，值得开一个小标题精讲。</p><h4 id="挤出"><a href="#挤出" class="headerlink" title="挤出"></a>挤出</h4><p>选择一个元素（点、线、面）就可以在原来元素的基础上拉出一个新物体。</p><p>注意：挤出其实是两个动作，它会创建出重合的点或线面，如果有太多重合的元素，这将会对你的渲染造成很大负担，你可能需要多撤回几次，或者删掉多余的东西。</p><p><img src="/pic/BD2.6.png" alt="Blender" title="Blender"></p><p>内挤：在<code>面模式</code>下按下<code>I键</code>向内创造一个新面。</p><p><img src="/pic/BD2.7.png" alt="Blender" title="Blender"></p><h4 id="倒角"><a href="#倒角" class="headerlink" title="倒角"></a>倒角</h4><p>在<code>线模式</code>下在选中一条线的的时候，按下<code>Ctrl+B键</code>创建出倒角。<br>滑动<code>鼠标中键滚轮</code>，可以调节倒角的密度。<br><code>Ctrl+Z键</code>可以选择是直倒角还是圆润倒角。<br>看到图中下面一排文字吗，一直按住Ctrl键的同时按下那些键就可以调整那些功能。</p><p><img src="/pic/BD2.8.png" alt="Blender" title="Blender"></p><h4 id="循环切割"><a href="#循环切割" class="headerlink" title="循环切割"></a>循环切割</h4><p><code>Ctrl+R键</code>就是切豆腐。滑动<code>鼠标中键滚轮</code>，可以调节切割的次数<br><code>Ctrl+R键</code>也可以拉线。</p><p><img src="/pic/BD2.9.png" alt="Blender" title="Blender"></p><h4 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h4><p>选择两个元素，按住<code>M键</code>合并元素。</p><h4 id="断开"><a href="#断开" class="headerlink" title="断开"></a>断开</h4><p>就像把一个纸模型拆开一样，按下<code>V键</code>断开一个元素。</p><h4 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h4><p>按下<code>F键</code>就可以补洞。反正就这么理解吧。<br>在上面使用<code>栅格补充</code>可以让你在补上的基础上再生成新的线条。</p><h4 id="切刀"><a href="#切刀" class="headerlink" title="切刀"></a>切刀</h4><p>划一刀，切开物体。使用<code>K键</code>切割。</p><h4 id="桥接"><a href="#桥接" class="headerlink" title="桥接"></a>桥接</h4><p><code>Ctrl+E键</code>将两个元素连接<br>注意：必须得是一个物体才能连接，选中两个物体的同时按下<code>Ctrl+J键</code>就可以合并成一个了。</p><h4 id="分离"><a href="#分离" class="headerlink" title="分离"></a>分离</h4><p>按下<code>P键</code>分离一个物体，前提是你得选中。</p><h4 id="面吸附"><a href="#面吸附" class="headerlink" title="面吸附"></a>面吸附</h4><p>在最上面有一个磁铁标志的东西，打开它再移动你的物体就可以吸附在上面了。<br>图中我进行了一些设置。让后你就可以移动（G键）试试看了。</p><p><img src="/pic/BD2.15.png" alt="Blender" title="Blender"></p><p>请注意：在进行吸附的时候记得看看你物体上的中心位置（就是那个黄点），如果中心在物体外面吸附的时候可能会鬼畜了，不行就右键调一下。</p><p><img src="/pic/BD2.16.png" alt="Blender" title="Blender"></p><p>最后别忘了关吸附。</p><h4 id="衰减编辑"><a href="#衰减编辑" class="headerlink" title="衰减编辑"></a>衰减编辑</h4><p>在<code>面吸附</code>的边上还有一个很好用的功能，它是<code>衰减编辑</code>。你可以用它来细微移动某一个物件。</p><p><img src="/pic/BD2.17.png" alt="Blender" title="Blender"></p><p>最后别忘了关掉。</p><h4 id="旋绕"><a href="#旋绕" class="headerlink" title="旋绕"></a>旋绕</h4><p>在图中左侧有一个<code>旋绕</code>功能，我觉得你看下面这张图就能理解了。</p><p><img src="/pic/BD2.19.png" alt="Blender" title="Blender"></p><p>你可以看看把旋转中心移动到别的地方会怎样。</p><p><img src="/pic/BD2.20.png" alt="Blender" title="Blender"></p><h3 id="修改器"><a href="#修改器" class="headerlink" title="修改器"></a>修改器</h3><p>Blander的建模方式跟Maya3D很像，都是像捏橡皮泥一样捏出一个模型，修改器可以帮我们更好的捏。<br>建议你能用<code>修改器</code>建模就用修改器。</p><p>在开始之前，你可能需要去<code>偏好设置</code>里面的<code>插件</code>中找几个好用的插件工具。</p><p><img src="/pic/BD2.10.png" alt="Blender" title="Blender"></p><p>如图我安装了<code>LoopTools</code>。</p><p>在安装了<code>LoopTools</code>后我们可以很方便的把里面的这个六边形改成圆形。框选后按下<code>N键</code>。<br>看你右上角的<code>编辑</code>里面，就多了一个选项</p><p><img src="/pic/BD2.11.png" alt="Blender" title="Blender"></p><p>此时，我<code>右键</code>选择<code>细分</code>，再按下<code>LoopTools</code>中的<code>圆环</code>，这样中间就成了圆形了。<br>最后桥接就形成了图中的图形了。</p><p><img src="/pic/BD2.12.png" alt="Blender" title="Blender"></p><p>如果我们用<code>修改器</code>建这个模会有多方便呢？（没错，上面这几个步骤还没有用到修改器）</p><p>想要打开<code>修改器</code>，选中一个物体看右边的那个<code>蓝色的扳手图标</code>。</p><p><img src="/pic/BD2.13.png" alt="Blender" title="Blender"></p><p>只要选则我们想要的功能，自己调就完事了。<br>我们最常用的功能就是：<code>表面细分</code>（捏橡皮泥的）、<code>实体化</code>（加厚的东西）、<code>倒角</code></p><p>这几个很好理解，你自己试试就行。<br><code>布尔修改器</code>（设定两个物体叠加状态），通常是对两个重叠的建模进行设置。</p><p>设置完了<code>修改器</code>后别忘了<code>应用</code>，而且要注意应用的顺序，应用完后就不可修改了。</p><p>如图这是一个使用了<code>表面细分</code>、<code>实体化</code>、<code>倒角</code>修改器做出来的场景。</p><p><img src="/pic/BD2.14.png" alt="Blender" title="Blender"></p><p>这是一个使用了表面细分、实体化、衰减编辑做出来的东西（树桩）。</p><p><img src="/pic/BD2.18.png" alt="Blender" title="Blender"></p><h4 id="更多修改器"><a href="#更多修改器" class="headerlink" title="更多修改器"></a>更多修改器</h4><p>刚刚的是最常用的修改器，现在学习一下更多的修改器。</p><p>1.<code>简易形变修改器</code>扭曲与弯曲还是有区别的，除此之外还可以进行锥化和拉伸。<br>2.<code>缩囊修改器</code>让一个物体紧贴着另一个物体。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 科技星球 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blender </tag>
+            
+        </tags>
       
     </entry>
     

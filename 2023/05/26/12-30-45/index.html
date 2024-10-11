@@ -1,0 +1,395 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>C++笔记备份 | YourID的网站</title><meta name="author" content="YourID"><meta name="copyright" content="YourID"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="备份笔记，以供参考。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++笔记备份">
+<meta property="og:url" content="http://ayourid.github.io/2023/05/26/12-30-45/index.html">
+<meta property="og:site_name" content="YourID的网站">
+<meta property="og:description" content="备份笔记，以供参考。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://ayourid.github.io/img/r2.png">
+<meta property="article:published_time" content="2023-05-26T04:30:45.000Z">
+<meta property="article:modified_time" content="2023-11-14T08:00:36.000Z">
+<meta property="article:author" content="YourID">
+<meta property="article:tag" content="C++">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ayourid.github.io/img/r2.png"><link rel="shortcut icon" href="/img/Y.png"><link rel="canonical" href="http://ayourid.github.io/2023/05/26/12-30-45/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'C++笔记备份',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-14 16:00:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style1.css?v1"><link rel="stylesheet" href="/css/mousestyle.css?v1"><link rel="stylesheet" href="/css/style4.css?v1"><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head></html><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/YourID.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/YourID/"><i class="fa-fw fas fa-heart"></i><span> YourID的个人页面</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/r2.png')"><nav id="nav"><span id="blog-info"><a href="/" title="YourID的网站"><span class="site-name">YourID的网站</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/YourID/"><i class="fa-fw fas fa-heart"></i><span> YourID的个人页面</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">C++笔记备份</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-26T04:30:45.000Z" title="发表于 2023-05-26 12:30:45">2023-05-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-14T08:00:36.000Z" title="更新于 2023-11-14 16:00:36">2023-11-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E6%8A%80%E6%98%9F%E7%90%83/">科技星球</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="C++笔记备份"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>备份笔记，以供参考。</p>
+<span id="more"></span>
+
+<p>优秀的教程网站：<a target="_blank" rel="noopener" href="https://www.learncpp.com/">https://www.learncpp.com/</a><br>C++的参考手册：<a target="_blank" rel="noopener" href="https://zh.cppreference.com/">https://zh.cppreference.com/</a></p>
+<p>目录不分先后</p>
+<h3 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h3><p>int 定义变量</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">std::cout &lt;&lt;  <span class="comment">//输出</span></span><br><span class="line">&lt;&lt; <span class="string">&#x27;\n&#x27;</span>       <span class="comment">//换行</span></span><br><span class="line">std::cin&gt;&gt; x ;<span class="comment">//输入 </span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span>-type <span class="built_in">identifier</span>() </span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调用函数时，不要忘记在函数名称后包含括号 （）</p>
+<hr>
+<h3 id="定义新函数"><a href="#定义新函数" class="headerlink" title="定义新函数"></a>定义新函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">doPrint</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;In doPrint()\n&quot;</span>;       </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Starting main()\n&quot;</span>;</span><br><span class="line">    <span class="built_in">doPrint</span>(); <span class="comment">//使用新函数</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Ending main()\n&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p>用于非void 定义的函数 void不行<br>return 函数本身<br>每个int 定义的函数必须有返回值<br>它会导致函数立即返回到调用方。</p>
+<hr>
+<h3 id="定义-define"><a href="#定义-define" class="headerlink" title="定义#define"></a>定义#define</h3><p>类似于定义</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MY_NAME <span class="string">&quot;Alex&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;My name is: &quot;</span> &lt;&lt; MY_NAME;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h3><p>方便声明导入的文件  .h</p>
+<hr>
+<h3 id="所有可以定义的变量"><a href="#所有可以定义的变量" class="headerlink" title="所有可以定义的变量"></a>所有可以定义的变量</h3><p>布尔值</p>
+<p>bool	<br>一般情况使用1和0作为关键字<br>启用</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::cin &gt;&gt; std::boolalpha;<span class="comment">//时则使用关键字 true 和 false （都是小写）</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="保存字符"><a href="#保存字符" class="headerlink" title="保存字符"></a>保存字符</h3><p>char	&#x2F;&#x2F;字符文字总是放在单引号之间（例如’g’，’1’，’’’）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> ch1&#123; <span class="string">&#x27;a&#x27;</span> &#125;; <span class="comment">// (preferred)</span></span><br><span class="line">  std::cout &lt;&lt; ch1; <span class="comment">// cout prints character &#x27;a&#x27;</span></span><br><span class="line">  <span class="type">char</span> ch&#123;&#125;;</span><br><span class="line">  std::cin &gt;&gt; ch; <span class="comment">// ch = &#x27;a&#x27;, &quot;bcd&quot; is left queued.</span></span><br><span class="line">  std::cout &lt;&lt; <span class="string">&quot;You entered: &quot;</span> &lt;&lt; ch &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>没什么用了<br>wchar_t	<br>char16_t	<br>char32_t	<br>short		<br>int	<br>long	<br>long long	</p>
+<p>浮点数对于存储非常大或非常小的数字非常有用，包括那些具有小数分量的数字。<br>float fValue;<br>double dValue;<br>long double ldValue;<br>double		<br>long double		</p>
+<hr>
+<h3 id="If判断"><a href="#If判断" class="headerlink" title="If判断"></a>If判断</h3><p><code>if (condition) true_statement;</code><br>如果 括号条件允许 则执行</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condition)    <span class="comment">//如果</span></span><br><span class="line">    true_statement;</span><br><span class="line"><span class="keyword">else</span>              <span class="comment">//否则</span></span><br><span class="line">    false_statement;</span><br></pre></td></tr></table></figure>
+
+<p>简单符号表达<code>if else ?:</code><br> (condition) ? expression1 : expression2;<br>如果条件的计算结果为 true，则执行表达式 1，否则执行表达式 2。请注意，表达式 2 不是可选的。</p>
+<hr>
+<h3 id="转义序列"><a href="#转义序列" class="headerlink" title="转义序列"></a>转义序列</h3><p>换行 \n<br>水平拉开距离 \t<br>警报	\a	发出警报，例如哔哔声<br>退格	\b	将光标向后移动一个空格<br>表单馈送	\f	将光标移动到下一个逻辑页<br>换行符	\n	将光标移动到下一行<br>回车	\r	将光标移动到行首<br>水平选项卡	\t	打印水平选项卡<br>垂直选项卡	\v	打印垂直选项卡<br>单引号	&#39;	打印单个报价单<br>双引号	&quot;	打印双引号<br>反斜杠	\	打印反斜杠。<br>问号	?	打印问号。不再相关。您可以使用未转义的问号。<br>八进制数	\（数字）	转换为由八进制表示的字符<br>十六进制数	\x（数字）	转换为由十六进制数表示的字符</p>
+<hr>
+<h3 id="const-常量"><a href="#const-常量" class="headerlink" title="const 常量"></a>const 常量</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">double</span> gravity; <span class="comment">//定义一个常量 无法再次更改</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="启用字符串"><a href="#启用字符串" class="headerlink" title="启用字符串"></a>启用字符串</h3><p><code>#include &lt;string&gt;</code><br>启用 <code>#include &lt;string_view&gt;</code><br>创建字符串 <code>std::string X &#123;&#125;;</code><br>别忘了加上<code>&quot;&quot;</code><br>要将整行输入读入字符串，最好改用该函数（高级输入） <code>std::getline()</code><br><code>std::getline(std::cin &gt;&gt; std::ws, name);</code><br>小函数 <code>&lt;&lt; name.length()</code> 或<code>std::ssize()</code> 计算有多少个字<br><code>std：：string_view</code>提供对现有字符串（C 样式字符串文本、std：：字符串或 char 数组）的只读访问权限，而无需创建副本。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">std::string s&#123; <span class="string">&quot;Hello, world!&quot;</span> &#125;;</span><br><span class="line">std::cout &lt;&lt; s &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="基本数学运算"><a href="#基本数学运算" class="headerlink" title="基本数学运算"></a>基本数学运算</h3><p>一元加号	+	+x	x 的值<br>一元减号	-	-x	x 的相反数</p>
+<p>算子	象征	形式	操作<br>加法	+	x + y	  x 加 y<br>减法	-	x - y	  x 减去 y<br>乘法	*	x * y	  x 乘以 y<br>划分	&#x2F;	x &#x2F; y     x 除以 y<br>模量（余数）	%	x % y	 x除以y得的余数</p>
+<p><code>#include&lt;cmath&gt;</code>启用指数运算   使用 <code>pow（）</code>函数：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> x&#123; std::<span class="built_in">pow</span>(<span class="number">3</span>, <span class="number">2</span>) &#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b,ret;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d,%d&quot;</span>, &amp;a, &amp;b);</span><br><span class="line">    ret = <span class="built_in">pow</span>(a,b);    <span class="comment">//求出a的b次方</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, ret);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="递增和递减变量"><a href="#递增和递减变量" class="headerlink" title="递增和递减变量"></a>递增和递减变量</h3><p>前缀增量（预增量）	++	++x	递增 x，然后返回 x<br>前缀递减（预递减）	––	––x	递减 x，然后返回 x<br>后缀增量（后缀增量）++	x++	复制 x，然后递增 x，然后返回副本<br>后缀递减（后递减）	––	x––	复制 x，然后递减 x，然后返回副本</p>
+<hr>
+<h3 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h3><p>大于	&gt;	x &gt; y	如果 x 大于 y，则为真，否则为假<br>小于	&lt;	x &lt; y	如果 x 小于 y，则为真，否则为假<br>大于或等于	&gt;&#x3D;	x &gt;&#x3D; y	如果 x 大于或等于 y，则为真，否则为假<br>小于或等于	&lt;&#x3D;	x &lt; &#x3D; y	如果 x 小于或等于 y，则为真，否则为假<br>平等	&#x3D;&#x3D;	x &#x3D;&#x3D; y	如果 x 等于 y，则为真，否则为假<br>不等式	!&#x3D;	x ！&#x3D; y	如果 x 不等于 y，则为真，否则为假<br>这些运算符中的每一个的计算结果均为布尔值 true （1） 或 false （0）</p>
+<hr>
+<h3 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h3><p>逻辑 不	!	！x	         如果 x 为假，则为真，如果 x 为真，则为假<br>逻辑 和	&amp;&amp;	x&amp;&amp;y          如果 x 和 y 都为真，则为真，否则为假<br>逻辑 或	||	x ||y	         如果 x 或 y 为真，则为真，否则为假</p>
+<p>如果逻辑 NOT 旨在对其他运算符的结果进行操作，则其他运算符及其操作数需要括在括号中。</p>
+<hr>
+<h3 id="自定义命名空间"><a href="#自定义命名空间" class="headerlink" title="自定义命名空间"></a>自定义命名空间</h3><p><code>namespace goo</code><br>在下面写内容 ，类似于函数 可以被调用<br>调用  <code>std::cout &lt;&lt; foo::doSomething(4, 3) &lt;&lt; &#39;\n&#39;;</code><br>这样可以调用命名重复的函数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> foo</span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">doSomething</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x + y;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> goo </span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">doSomething</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x - y;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt; goo::<span class="built_in">doSomething</span>(<span class="number">4</span>, <span class="number">3</span>) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>; </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="情况选择-switch与case"><a href="#情况选择-switch与case" class="headerlink" title="情况选择  switch与case"></a>情况选择  switch与case</h3><p>条件的计算结果必须为整数类型</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>（X）                                                        </span><br><span class="line">&#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:        <span class="comment">//x=1</span></span><br><span class="line">            std::cout &lt;&lt; <span class="string">&quot;One&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span>;                                                                           <span class="comment">//不加return 会导致 fallthrough（继续执行下一个case）</span></span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:                                         </span><br><span class="line">        x=<span class="number">2</span>            <span class="comment">//在代码中加入[[fallthrough]]可以阻止编译器报错</span></span><br><span class="line">            std::cout &lt;&lt; <span class="string">&quot;Two&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">3</span>:                                         x=<span class="number">3</span>                             </span><br><span class="line">            std::cout &lt;&lt; <span class="string">&quot;Three&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">default</span>:        <span class="comment">//都不是</span></span><br><span class="line">            std::cout &lt;&lt; <span class="string">&quot;Unknown&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>return可以换成break。这允许我们在不退出整个函数的情况下退出继续执行在这个函数中处switch其他内容</p>
+<hr>
+<h3 id="转到goto"><a href="#转到goto" class="headerlink" title="转到goto"></a>转到goto</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (x &lt; <span class="number">0.0</span>)</span><br><span class="line">       <span class="keyword">goto</span> tryAgain; </span><br></pre></td></tr></table></figure>
+
+<p>尽量少用</p>
+<hr>
+<h3 id="循环语句-while"><a href="#循环语句-while" class="headerlink" title="循环语句 while"></a>循环语句 while</h3><p>while (condition) 别写<code>；</code>了 满足条件 执行<br>    statement;</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>)  <span class="comment">//无限循环</span></span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>do-while<br>do-while 循环将检查条件。如果条件的计算结果为否 ，则执行路径将跳回到 do-while 循环的顶部并再次执行它</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Please make a selection: \n&quot;</span>;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;1) Addition\n&quot;</span>;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;2) Subtraction\n&quot;</span>;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;3) Multiplication\n&quot;</span>;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;4) Division\n&quot;</span>;</span><br><span class="line">        std::cin &gt;&gt; selection;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (selection != <span class="number">1</span> &amp;&amp; selection != <span class="number">2</span> &amp;&amp;</span><br><span class="line">        selection != <span class="number">3</span> &amp;&amp; selection != <span class="number">4</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="更加简洁的循环for"><a href="#更加简洁的循环for" class="headerlink" title="更加简洁的循环for"></a>更加简洁的循环for</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> count&#123; <span class="number">1</span> &#125;; count &lt;= <span class="number">10</span>; ++count) </span><br><span class="line"><span class="comment">//别写；了</span></span><br><span class="line"><span class="comment">//可以多弄几个</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> x&#123; <span class="number">0</span> &#125;, y&#123; <span class="number">9</span> &#125;; x &lt; <span class="number">10</span>; ++x, --y)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="随机数生成（伪随机而已）"><a href="#随机数生成（伪随机而已）" class="headerlink" title="随机数生成（伪随机而已）"></a>随机数生成（伪随机而已）</h3><p>加入引用</p>
+<p><code>#include &lt;ctime&gt;</code><br>产生一定范围随机数的通用表示公式是：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">srand</span>((<span class="type">int</span>)<span class="built_in">time</span>(<span class="number">0</span>));  <span class="comment">// 产生随机种子  把0换成NULL也行</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout &lt;&lt; <span class="built_in">rand</span>()%<span class="number">100</span>&lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>要取得[0,n)  就是rand（）%n     表示 从0到n-1的数<br>要取得[a,b)的随机整数，使用(rand() % (b-a))+ a;<br>要取得[a,b]的随机整数，使用(rand() % (b-a+1))+ a;<br>要取得(a,b]的随机整数，使用(rand() % (b-a))+ a + 1;<br>通用公式:a + rand() % n；其中的a是起始值，n是整数的范围。<br>要取得a到b之间的随机整数，另一种表示：a + (int)b * rand() &#x2F; (RAND_MAX + 1)。<br>要取得0～1之间的浮点数，可以使用rand() &#x2F; double(RAND_MAX)。</p>
+<hr>
+<h3 id="函数模板"><a href="#函数模板" class="headerlink" title="函数模板"></a>函数模板</h3><p>函数模板实际上不是函数 - 它们的代码不是直接编译或执行的。<br>相反，函数模板有一个作用：生成函数（编译和执行）<br>用于简化函数<br>&#x2F;&#x2F;template 关键字告诉C++编译器 要开始泛型编程了<br>&#x2F;&#x2F;T - 参数化数据类型<br>template &lt; 类型形式参数表 ，第二个形式&gt;                       （定义了一定要用，否则会报错）<br>类型 函数名 (形式参数表)<br>{<br>&#x2F;&#x2F;语句序列<br>}<br>所谓函数模板，实际上是建立一个通用函数，其函数类型和形参类型不具体指定，<br>用一个虚拟的类型来代表。这个通用函数就称为函数模板。</p>
+<p>例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> X&gt;</span><br><span class="line"><span class="function">X <span class="title">max</span><span class="params">(X x, X y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (x &gt; y) ? x : y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="built_in">max</span>&lt;<span class="type">int</span>&gt;(<span class="number">1</span>, <span class="number">2</span>) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>; <span class="comment">// instantiates and calls function max&lt;int&gt;(int, int)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="左值引用，快速赋值"><a href="#左值引用，快速赋值" class="headerlink" title="左值引用，快速赋值"></a>左值引用，快速赋值</h3><p><code>int&amp; y</code>或者<code>const int&amp; y</code>可以绑定任何类型的参数         只是传递值就用int&amp;</p>
+<p>对于复制成本低廉的对象，复制的成本类似于绑定的成本，因此我们倾向于按值传递，因此生成的代码会更快。<br>对于复制成本高昂的对象，复制的成本占主导地位，因此我们倾向于传递（const）引用以避免复制。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">addOne</span><span class="params">(<span class="type">int</span>&amp; y)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ++y; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="built_in">addOne</span>(x);</span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;value = &quot;</span> &lt;&lt; x &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//快速将x赋值为y</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><p>指针是一个变量<br>地址的运算符 <code>（&amp;）std::cout &lt;&lt; &amp;x ；</code> 将显示x的存储位置（16位）</p>
+<p>&amp;符号容易引起混淆，因为它具有不同的含义，具体取决于上下文：</p>
+<p>当跟随类型名称时，&amp; 表示左值引用：。int&amp; ref<br>在表达式的一元上下文中使用时，&amp; 是地址运算符：。std::cout &lt;&lt; &amp;x<br>在表达式的二进制上下文中使用时，&amp; 是按位 AND 运算符：。std::cout &lt;&lt; x &amp; y</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="type">int</span>  var = <span class="number">20</span>;    <span class="comment">/* 实际变量的声明 */</span></span><br><span class="line">   <span class="type">int</span>  *ip;         <span class="comment">/* 指针变量的声明 */</span></span><br><span class="line"> </span><br><span class="line">   ip = &amp;var;  <span class="comment">/* 在指针变量中存储 var 的地址 */</span></span><br><span class="line"> </span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;var 变量的地址: %p\n&quot;</span>, &amp;var  );</span><br><span class="line"> </span><br><span class="line">   <span class="comment">/* 在指针变量中存储的地址 */</span></span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;ip 变量存储的地址: %p\n&quot;</span>, ip );</span><br><span class="line"> </span><br><span class="line">   <span class="comment">/* 使用指针访问值 */</span></span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;*ip 变量的值: %d\n&quot;</span>, *ip );</span><br><span class="line"> </span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 定义野生指针  <code>int* ptr;</code><br> 最好定义空指针 <code>int* ptr&#123;&#125;；</code></p>
+<p> 定义指定指针 指定为（左值引用x）<code>int* ptr3&#123; &amp;x &#125;</code><br> 取消引用     <code>std::cout &lt;&lt; *ptr &lt;&lt; &#39;\n&#39;;</code></p>
+<hr>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span>* ip;</span><br><span class="line">    ip = &amp;x;</span><br><span class="line">    std::cout &lt;&lt; ip &lt;&lt;<span class="string">&quot;\n&quot;</span> ;</span><br><span class="line">    std::cout &lt;&lt; x &lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    std::cout &lt;&lt; &amp;x &lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出为ip&#x3D;&amp;x</p>
+<hr>
+<h3 id="用户定义类型"><a href="#用户定义类型" class="headerlink" title="用户定义类型"></a>用户定义类型</h3><p>定义 语句在头文件中定义程序定义的类型</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">Fraction</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> x &#123;&#125;;</span><br><span class="line">	<span class="type">int</span> y&#123;&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>函数体外只能进行如变量或函数定义声明等，不能执行语句或调用函数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自定义函数名称     </span></span><br><span class="line"><span class="keyword">using</span> Color = <span class="type">int</span>;</span><br></pre></td></tr></table></figure>
+
+<p>定义结构 使代码更加可视化。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">enployee</span></span><br><span class="line">&#123;</span><br><span class="line">    std::string id&#123;&#125;;</span><br><span class="line">    <span class="type">int</span> time&#123;&#125;;</span><br><span class="line">    <span class="type">int</span> age&#123;&#125;;</span><br><span class="line">    <span class="type">int</span> number&#123;&#125;;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    enployee Thefirst;</span><br><span class="line">        Thefirst.age = <span class="number">18</span>;</span><br><span class="line">        Thefirst.id =<span class="string">&quot;YourID&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>其中每个可能的值都定义为符号常量</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="title class_">Color</span></span><br><span class="line">&#123;</span><br><span class="line">    red,    <span class="comment">//命令red=0</span></span><br><span class="line">    green,  <span class="comment">//命令green     =1</span></span><br><span class="line">     blue,  <span class="comment">//命令blue      =2</span></span><br><span class="line">&#125; ; </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Color apple &#123; red &#125;;         <span class="comment">//枚举命令Color 自由命名局部变量apple  且apple=0</span></span><br><span class="line">    Color shirt &#123; green &#125;;</span><br><span class="line">    Color cup &#123; blue &#125;;    </span><br><span class="line"></span><br><span class="line">    Color socks &#123; white &#125;;           <span class="comment">//错误</span></span><br><span class="line">    Color hat &#123; <span class="number">2</span> &#125;;                 <span class="comment">//错误</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>由于枚举器是描述性的，因此它们对于增强代码文档和可读性非常有用。<br>枚举类型最适合在具有少量相关常量且对象一次只需要保存其中一个值时使用。</p>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>继承是一个优化代码的语句，可以减少不必要的定义。<br>A类继承了B类的属性和方法。<br>继承的最大优势是，基类中已经存在的代码不需要在子类中重写。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>:<span class="keyword">public</span> B&#123;&#125;；</span><br><span class="line"><span class="comment">//A是新类的名字，public是继承方式，B是要继承的类</span></span><br><span class="line"><span class="comment">//意思就是说我定义了一个名叫 A的类 以public的方式 来继承你B</span></span><br></pre></td></tr></table></figure>
+<p>继承主要方式有三种：<code>public</code>，<code>protectd</code>，<code>private</code>。不过最常用的是<code>public</code>。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://AYourID.github.io">YourID</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://ayourid.github.io/2023/05/26/12-30-45/">http://ayourid.github.io/2023/05/26/12-30-45/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://AYourID.github.io" target="_blank">YourID的网站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/C/">C++</a></div><div class="post_share"><div class="social-share" data-image="/img/r2.png" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/05/30/11-03-21/" title="气焊操作顺序"><img class="cover" src="/img/r2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">气焊操作顺序</div></div></a></div><div class="next-post pull-right"><a href="/2023/05/25/21-33-23/" title="画像素画的技巧"><img class="cover" src="/img/r1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">画像素画的技巧</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/YourID.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">YourID</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/AYourID/AYourID.github.io.git"><i class="fab fa-github"></i><span>YourID</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">YourID的网站,加载可能比较慢，按下F5刷新！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC"><span class="toc-number">1.</span> <span class="toc-text">基本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E"><span class="toc-number">2.</span> <span class="toc-text">函数声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%96%B0%E5%87%BD%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">定义新函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">4.</span> <span class="toc-text">返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-define"><span class="toc-number">5.</span> <span class="toc-text">定义#define</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-number">6.</span> <span class="toc-text">头文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%80%E6%9C%89%E5%8F%AF%E4%BB%A5%E5%AE%9A%E4%B9%89%E7%9A%84%E5%8F%98%E9%87%8F"><span class="toc-number">7.</span> <span class="toc-text">所有可以定义的变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98%E5%AD%97%E7%AC%A6"><span class="toc-number">8.</span> <span class="toc-text">保存字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#If%E5%88%A4%E6%96%AD"><span class="toc-number">9.</span> <span class="toc-text">If判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89%E5%BA%8F%E5%88%97"><span class="toc-number">10.</span> <span class="toc-text">转义序列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#const-%E5%B8%B8%E9%87%8F"><span class="toc-number">11.</span> <span class="toc-text">const 常量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E7%94%A8%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">12.</span> <span class="toc-text">启用字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97"><span class="toc-number">13.</span> <span class="toc-text">基本数学运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%92%E5%A2%9E%E5%92%8C%E9%80%92%E5%87%8F%E5%8F%98%E9%87%8F"><span class="toc-number">14.</span> <span class="toc-text">递增和递减变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">15.</span> <span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91"><span class="toc-number">16.</span> <span class="toc-text">逻辑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="toc-number">17.</span> <span class="toc-text">自定义命名空间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%83%85%E5%86%B5%E9%80%89%E6%8B%A9-switch%E4%B8%8Ecase"><span class="toc-number">18.</span> <span class="toc-text">情况选择  switch与case</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AC%E5%88%B0goto"><span class="toc-number">19.</span> <span class="toc-text">转到goto</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5-while"><span class="toc-number">20.</span> <span class="toc-text">循环语句 while</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E5%8A%A0%E7%AE%80%E6%B4%81%E7%9A%84%E5%BE%AA%E7%8E%AFfor"><span class="toc-number">20.1.</span> <span class="toc-text">更加简洁的循环for</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%94%9F%E6%88%90%EF%BC%88%E4%BC%AA%E9%9A%8F%E6%9C%BA%E8%80%8C%E5%B7%B2%EF%BC%89"><span class="toc-number">21.</span> <span class="toc-text">随机数生成（伪随机而已）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF"><span class="toc-number">22.</span> <span class="toc-text">函数模板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A6%E5%80%BC%E5%BC%95%E7%94%A8%EF%BC%8C%E5%BF%AB%E9%80%9F%E8%B5%8B%E5%80%BC"><span class="toc-number">23.</span> <span class="toc-text">左值引用，快速赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E9%92%88"><span class="toc-number">24.</span> <span class="toc-text">指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B"><span class="toc-number">25.</span> <span class="toc-text">用户定义类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%9A%E4%B8%BE"><span class="toc-number">26.</span> <span class="toc-text">枚举</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF"><span class="toc-number">27.</span> <span class="toc-text">继承</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/09/18/08-33-49/" title="Cakewalk操作笔记"><img src="/img/r1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cakewalk操作笔记"/></a><div class="content"><a class="title" href="/2024/09/18/08-33-49/" title="Cakewalk操作笔记">Cakewalk操作笔记</a><time datetime="2024-09-18T00:33:49.000Z" title="发表于 2024-09-18 08:33:49">2024-09-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/01/16-15-38/" title="Hello World"><img src="/img/r5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2024/09/01/16-15-38/" title="Hello World">Hello World</a><time datetime="2024-09-01T08:15:38.061Z" title="发表于 2024-09-01 16:15:38">2024-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/09/18-08-19/" title="Blender学习笔记"><img src="/img/r3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Blender学习笔记"/></a><div class="content"><a class="title" href="/2024/04/09/18-08-19/" title="Blender学习笔记">Blender学习笔记</a><time datetime="2024-04-09T10:08:19.000Z" title="发表于 2024-04-09 18:08:19">2024-04-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/10/09-20-29/" title="Analysis_Fluent操作笔记"><img src="/img/r2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Analysis_Fluent操作笔记"/></a><div class="content"><a class="title" href="/2024/03/10/09-20-29/" title="Analysis_Fluent操作笔记">Analysis_Fluent操作笔记</a><time datetime="2024-03-10T01:20:29.000Z" title="发表于 2024-03-10 09:20:29">2024-03-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/03/17-38-54/" title="PLC实践记录与学习笔记"><img src="/img/r1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PLC实践记录与学习笔记"/></a><div class="content"><a class="title" href="/2024/03/03/17-38-54/" title="PLC实践记录与学习笔记">PLC实践记录与学习笔记</a><time datetime="2024-03-03T09:38:54.000Z" title="发表于 2024-03-03 17:38:54">2024-03-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/r2.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By YourID</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="8755782747" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body></script>
